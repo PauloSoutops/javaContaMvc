@@ -1,0 +1,17 @@
+package br.com.cotiinformativa.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class AutenticarController {
+
+	@RequestMapping(value = "/acesso")
+	public ModelAndView autenticar() {
+
+		ModelAndView modelAndView = new ModelAndView("autenticar");
+		return modelAndView;
+	}
+
+}
